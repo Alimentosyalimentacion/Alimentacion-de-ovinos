@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alimentación de ovinos · Medicina Veterinaria</title>
+<style>
+:root{color-scheme:light;--ink:#182d29;--muted:#455e57;--accent:#006552;--pale:#edf6f1;--line:#cfdfd7;--warm:#faf1e4}*{box-sizing:border-box}body{margin:0;background:white;color:var(--ink);font:1rem/1.6 system-ui,sans-serif}main,.wrap{width:min(1080px,calc(100% - 32px));margin:auto}header{border-bottom:1px solid var(--line);padding:13px 0;color:var(--accent);font-weight:750}h1,h2{font-family:Georgia,serif;line-height:1.08;letter-spacing:-.035em}h1{font-size:clamp(2.6rem,7vw,5rem);margin:.2em 0}h2{font-size:clamp(1.9rem,4vw,3.1rem);margin:.2em 0 .5em}h3{line-height:1.2;margin:1.4em 0 .5em}p{margin:.55em 0 1em}a{color:var(--accent)}nav{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}nav a,button{border:1px solid var(--line);border-radius:9px;background:white;color:var(--accent);padding:8px 12px;font:inherit;font-weight:700}nav a{text-decoration:none}button{cursor:pointer}button:hover,nav a:hover{background:var(--pale)}:focus-visible{outline:3px solid #a75b1c;outline-offset:3px}.hero{padding:32px 0 10px;display:grid;grid-template-columns:1.7fr 1fr;gap:22px;align-items:center}.hero img{width:100%;max-height:240px;object-fit:contain;background:#f8f3e9;border-radius:20px}.hero p,.source{color:var(--muted)}section{border-top:1px solid var(--line);padding:34px 0;scroll-margin-top:14px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr));gap:12px}.card,.lab,details{padding:15px 17px;border:1px solid var(--line);border-radius:12px;margin:.7em 0}.card,.lab{background:var(--pale)}.card h3,.lab h3{margin-top:0}.note{background:var(--warm);padding:10px 14px;border-radius:9px}summary{cursor:pointer;font-weight:750;color:var(--accent)}.scroll{overflow:auto}table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}thead{background:var(--pale)}.source{font-size:.9rem}.form{display:flex;flex-wrap:wrap;gap:12px;align-items:end}.form label{display:grid;gap:4px}.form input,.form select{width:145px;padding:7px;border:1px solid #788d83;border-radius:6px;font:inherit;background:white;color:var(--ink)}.result{min-height:1.6em;margin-top:10px;font-weight:650}.barrow{display:grid;grid-template-columns:105px 1fr 57px;align-items:center;gap:8px;margin:5px 0}.track{height:14px;background:#fff;border-radius:10px;overflow:hidden}.fill{height:100%;background:#12725e}.fill.alt{background:#a85d2c}.audio{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.audio .status{align-self:center;color:var(--muted)}fieldset{border:0;padding:0;margin:0}legend{font-weight:750;padding:0}.choice{display:block;padding:6px 0}.actions{display:flex;flex-wrap:wrap;gap:8px}footer{border-top:1px solid var(--line);padding:20px 0;color:var(--muted)}@media(max-width:620px){.hero{grid-template-columns:1fr}.hero img{max-height:152px}section{padding:25px 0}}
+.matching{margin-top:20px}.match-row{margin:.65em 0}.match-row label{display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,2fr);gap:8px;align-items:center;font-weight:650}.match-row select{min-width:0;width:100%;padding:8px;border:1px solid #788d83;border-radius:7px;background:white;color:var(--ink);font:inherit}.match-note{margin:3px 0;font-size:.94rem}.match-note[data-result=correct]{color:#005542}.match-note[data-result=incorrect]{color:#8a271d}.matching dd{margin:0 0 8px}.matching button:disabled{opacity:.65;cursor:default}@media(max-width:620px){.match-row label{grid-template-columns:1fr;gap:2px}}
+</style>
+<body><header><div class="wrap">Medicina Veterinaria</div></header>
+<main><div class="hero"><div><h1>Alimentación de ovinos</h1><p>Explora qué cambia en la dieta de la oveja y del cordero, cómo interpretar los requerimientos y cuándo conviene complementar el pastoreo.</p></div><img src="data:image/webp;base64,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" alt="Oveja amamantando a un cordero"></div><nav aria-label="Módulos"><a href="#sistemas">Sistemas y pastoreo</a><a href="#oveja">Ciclo de la oveja</a><a href="#cordero">Cordero y destete</a><a href="#engorda">Crecimiento</a><a href="#complemento">Complementación</a><a href="#repaso">Repaso</a></nav><noscript>Activa JavaScript para utilizar las prácticas, el audio y el repaso.</noscript><section id="sistemas"><h2>Sistemas de producción, razas y pastoreo</h2>
+<p>El sistema de producción determina cuánto alimento obtiene el rebaño del pastoreo y cuánto puede controlar el productor mediante praderas manejadas, reservas o alimentación en corral.</p>
+<div class="grid"><article class="card"><h3>Extensivo</h3><p>El pastoreo sostiene la alimentación. La oferta cambia con la temporada y el manejo debe prever periodos de escasez.</p></article><article class="card"><h3>Semiintensivo</h3><p>Combina pastoreo y alimentación suministrada. Permite reservar el complemento para lotes o etapas con mayor demanda.</p></article><article class="card"><h3>Intensivo</h3><p>La diapositiva incluye animales estabulados o sobre pastos introducidos. El productor tiene mayor control sobre el alimento y el manejo del rebaño.</p></article></div>
+<details><summary>Panorama de producción y razas</summary><p>La gráfica mundial de la presentación muestra a China, Australia e India entre los países destacados de esa comparación. Las cifras corresponden a la gráfica de clase.</p><p><strong>Razas de pelo:</strong> Blackbelly, Katahdin, Saint Croix, Dorper, Pelibuey y Santa Inés. <strong>Razas de lana:</strong> entre los ejemplos aparecen Cheviot, Columbia, Ojinegra, Karakul y Corriedale.</p></details>
+<p>El labio superior hendido facilita el pastoreo cerca del suelo. Su capacidad de seleccionar partes de las plantas significa que lo disponible en el potrero puede diferir de lo que realmente comen. En el ejemplo de clase se prefieren pastos estoloníferos por su tolerancia al pastoreo y cobertura del suelo.</p>
+<p class="note"><strong>Caso.</strong> Si disminuye la oferta del potrero, revisa primero cuánto forraje pueden cosechar los animales y su calidad. Luego decide si se requiere forraje conservado, un complemento específico o ambos.</p>
+<p class="source">Presentación, pp. 7 y 21–27.</p></section>
+
+<section id="oveja"><h2>Alimentación de la oveja durante el ciclo reproductivo</h2>
+<p>La condición corporal estima las reservas del animal y ayuda a decidir si ajustar la dieta antes del empadre, al final de la gestación o tras la lactancia.</p>
+<div class="grid"><article class="card"><h3>Mantenimiento y recuperación</h3><p>En el periodo abierto, la demanda se relaciona con el mantenimiento y, cuando corresponde, con recuperar reservas para el siguiente ciclo.</p></article><article class="card"><h3>Flushing y empadre</h3><p>El <em>flushing</em> es un aumento temporal del aporte energético alrededor del empadre. Considera la condición corporal inicial y la calidad de la dieta base. La clase menciona que se prolonga dos semanas después de la monta.</p></article><article class="card"><h3>Gestación inicial y final</h3><p>La demanda aumenta al final de la gestación. Si el consumo es limitado, importa cuántos nutrientes puede aportar cada kg de materia seca.</p></article><article class="card"><h3>Lactancia</h3><p>La producción de leche eleva el requerimiento. La diapositiva ubica el pico cerca de la semana 3–4 y explica que las ovejas con parto doble suelen producir más leche.</p></article></div>
+<details><summary>Primalas y sementales</summary><p>La clase propone empadrar a las primalas cuando alcanzan 65–75 % de su peso maduro. Las primalas gestantes requieren nutrientes para su propio crecimiento y para la gestación. La p. 70 también muestra un ejemplo de semental de 80 kg con 2.8 kg MS, 6.4 Mcal de EM y 268 g de proteína diarios.</p></details>
+<div class="scroll"><table><caption>Ejemplos para una oveja de 60 kg, presentación p. 70</caption><thead><tr><th>Etapa</th><th>CMS (kg/d)</th><th>EM (Mcal/d)</th><th>Proteína (g/d)</th><th>Ca (g/d)</th><th>P (g/d)</th></tr></thead><tbody>
+<tr><td>Mantenimiento</td><td>1.1</td><td>2.2</td><td>104</td><td>2.3</td><td>2.1</td></tr><tr><td>Inicio de gestación</td><td>1.6</td><td>3.4</td><td>161</td><td>5.5</td><td>3.4</td></tr><tr><td>Últimas cuatro semanas de gestación</td><td>1.7</td><td>3.9</td><td>192</td><td>6.6</td><td>3.8</td></tr><tr><td>Primeras 6–8 semanas de lactancia</td><td>2.5</td><td>6.2</td><td>336</td><td>9.0</td><td>6.4</td></tr>
+</tbody></table></div><p class="note"><strong>Caso.</strong> En la gestación final, el ejemplo pasa de 161 a 192 g de proteína al día y el CMS solo aumenta de 1.6 a 1.7 kg/d. Revisa cuánto aporta la dieta por kg de MS y cuánto come la oveja.</p>
+<p class="source">Presentación, pp. 46–59, 65–66 y 70.</p></section>
+
+<section id="cordero"><h2>Del cordero al destete</h2>
+<p>Durante la lactancia, el <em>creep feeding</em> ofrece suplemento sólido al cordero en un espacio al que no acceden las ovejas adultas. Busca apoyar el crecimiento y facilitar la adaptación a la dieta sólida antes del destete. La presentación sitúa esta práctica durante la lactancia, sin indicar un día exacto de inicio.</p>
+<div class="scroll"><table><caption>Dos raciones de <em>creep feeding</em> de la p. 63</caption><thead><tr><th>Ingrediente</th><th>Ración 1 (%)</th><th>Ración 2 (%)</th><th>Función indicada</th></tr></thead><tbody>
+<tr><td>Cebada</td><td>30</td><td>41</td><td>Energía</td></tr><tr><td>Avena</td><td>30</td><td>36</td><td>Energía</td></tr><tr><td>Maíz</td><td>5</td><td>—</td><td>Energía</td></tr><tr><td>Granos secos de cervecería</td><td>9</td><td>—</td><td>Proteína y energía</td></tr><tr><td>Gluten de maíz</td><td>5</td><td>—</td><td>Proteína</td></tr><tr><td>Harina de pescado</td><td>5</td><td>5</td><td>Proteína</td></tr><tr><td>Pasta de soya</td><td>10</td><td>12</td><td>Proteína</td></tr><tr><td>Melaza</td><td>6</td><td>6</td><td>Palatabilidad</td></tr><tr><td>Premezcla</td><td>a</td><td>a</td><td>Vitaminas y minerales</td></tr><tr><td>Aditivos</td><td>b</td><td>b</td><td>Salud</td></tr>
+</tbody></table></div><p class="source">Los símbolos a y b se reproducen como aparecen en la tabla, sin porcentaje indicado.</p>
+<details><summary>Otros ejemplos de complemento de la p. 64</summary><div class="scroll"><table><caption>Inclusiones (%) tal como se muestran en la diapositiva</caption><thead><tr><th>Ingrediente</th><th>Dieta 1</th><th>Dieta 2</th><th>Dieta 3</th><th>Dieta 4</th><th>Dieta 5</th></tr></thead><tbody><tr><th scope="row">Sorgo</th><td>51</td><td>61</td><td>—</td><td>40</td><td>83</td></tr><tr><th scope="row">Harina de alfalfa</th><td>—</td><td>—</td><td>58</td><td>40</td><td>—</td></tr><tr><th scope="row">Pasta de soya</th><td>20</td><td>20</td><td>15</td><td>—</td><td>15</td></tr><tr><th scope="row">Canola</th><td>22</td><td>—</td><td>—</td><td>15</td><td>—</td></tr><tr><th scope="row">Melaza</th><td>5</td><td>5</td><td>5</td><td>2</td><td>2</td></tr><tr><th scope="row">Minerales</th><td>2</td><td>2</td><td>2</td><td>2</td><td>—</td></tr></tbody></table></div><p>Las dietas 2, 3 y 4 suman menos de 100 % con las inclusiones visibles en la fuente.</p></details><div class="lab"><h3>Compara las dos raciones</h3><label for="creep">Ingrediente <select id="creep"><option value="barley">Cebada</option><option value="soy">Pasta de soya</option><option value="molasses">Melaza</option></select></label><p id="creep-result" class="result" role="status"></p></div>
+<p>En el destete se retira la leche. La p. 70 muestra pesos de referencia de 10, 22 y 30 kg en escenarios de destete muy temprano, temprano y normal. Son ejemplos de la tabla, no criterios únicos. Considera cómo se ha adaptado el cordero a la dieta sólida.</p>
+<p class="source">Presentación, pp. 55–56, 62–64 y 70.</p></section>
+
+<section id="engorda"><h2>Crecimiento, desarrollo y finalización</h2>
+<p>El consumo de materia seca (CMS) expresa cuánto alimento ingiere el animal sin contar el agua. La energía metabolizable (EM) se puede leer como aporte diario o como densidad por kg de MS. La ganancia diaria de peso (GDP) permite seguir la respuesta del lote.</p>
+<div class="scroll"><table><caption>Referencias de la p. 70 por etapa</caption><thead><tr><th>Etapa</th><th>Peso vivo (kg)</th><th>GDP (g/d)</th><th>CMS (kg/d)</th><th>EM (Mcal/d)</th><th>Proteína (g/d)</th></tr></thead><tbody>
+<tr><td>Destete normal</td><td>30</td><td>300</td><td>1.3</td><td>3.6</td><td>191</td></tr><tr><td>Crecimiento</td><td>40</td><td>400</td><td>1.5</td><td>4.1</td><td>234</td></tr><tr><td>Desarrollo</td><td>50</td><td>425</td><td>1.7</td><td>4.7</td><td>240</td></tr><tr><td>Finalización</td><td>Más de 60</td><td>350</td><td>1.7</td><td>4.7</td><td>240</td></tr>
+</tbody></table></div>
+<div class="lab"><h3>Compara con la etapa anterior</h3><label for="growth">Peso de referencia <select id="growth"><option value="1">40 kg · Crecimiento</option><option value="2">50 kg · Desarrollo</option><option value="3">Más de 60 kg · Finalización</option></select></label><p id="growth-result" class="result" role="status"></p></div>
+<p class="note"><strong>Lectura del ejemplo.</strong> Entre desarrollo y finalización, la tabla mantiene el CMS y la EM diarios, mientras la GDP de referencia baja de 425 a 350 g/d. El peso más alto no implica una ganancia diaria más alta.</p>
+<p class="source">Presentación, p. 70. Las metas pertenecen a los escenarios de clase.</p></section>
+
+<section id="complemento"><h2>Complementación estratégica y minerales</h2>
+<p>Primero identifica el nutriente que falta. Heno, ensilado, subproductos, sales minerales, bancos de proteína y bloques multinutricionales aparecen como opciones de la presentación. En estiaje, reservar forraje ayuda a cubrir la falta de volumen. Un suplemento específico se elige después de revisar qué aporta la dieta base.</p>
+<p>La tabla de clase incluye calcio y fósforo por etapa. También se mencionan selenio, zinc y manganeso en el contexto reproductivo. Compara el aporte de la dieta completa con lo que requiere el lote.</p>
+<div class="lab"><h3>Costo por kg de proteína cruda</h3><p>Usa precios en pesos por kg de materia seca y proteína cruda como porcentaje en esa misma base. Divide el precio entre la fracción de proteína. Los valores iniciales son ejemplos didácticos.</p>
+<form class="form" id="cost-form"><label>Precio A ($/kg MS)<input type="number" name="priceA" min="0" step="any" value="8" required></label><label>PC de A (% MS)<input type="number" name="pcA" min="0.01" max="100" step="any" value="20" required></label><label>Precio B ($/kg MS)<input type="number" name="priceB" min="0" step="any" value="10" required></label><label>PC de B (% MS)<input type="number" name="pcB" min="0.01" max="100" step="any" value="30" required></label><button>Comparar costos</button></form><p id="cost-result" class="result" role="status"></p>
+<p>El costo por kg de proteína ayuda a comparar dos opciones cuando la proteína es el déficit. Para elegir un ingrediente, considera también el resto de sus nutrientes y su uso en la ración.</p></div>
+<p class="source">Presentación, pp. 15, 67 y 71–78.</p></section>
+<section id="repaso"><h2>Repaso y calificación</h2><p>La nota global de relación de conceptos reúne los aciertos de los cinco módulos. El cuestionario permite moverte entre preguntas y cambiar respuestas antes de ver su calificación.</p><div id="quiz" class="lab"></div></section>
+<section id="fuentes"><h2>Fuente</h2><p>Luis Corona Gochi. <cite>Alimentación de ovinos</cite>. Departamento de Nutrición Animal, Facultad de Medicina Veterinaria y Zootecnia, UNAM. Las páginas indicadas corresponden al PDF de clase.</p></section>
+</main><footer><div class="wrap">Medicina Veterinaria · Alimentación de ovinos</div></footer><script>const byId=id=>document.getElementById(id);
+const fmt=(value,digits=2)=>value.toLocaleString('es-MX',{minimumFractionDigits:digits,maximumFractionDigits:digits});
+function bindForm(id,output,calculate){
+ const form=byId(id);
+ const result=byId(output);
+ const inputs=[...form.querySelectorAll('input[type="number"]')];
+ function update(){
+  if(inputs.some(input=>!input.validity.valid || !Number.isFinite(input.valueAsNumber))){
+   result.textContent='Completa los campos con números dentro de los límites indicados.';
+   return;
+  }
+  result.textContent=calculate(Object.fromEntries(inputs.map(input=>[input.name,input.valueAsNumber])));
+ }
+ form.noValidate=true;
+ form.addEventListener('input',update);
+ form.addEventListener('change',update);
+ form.addEventListener('submit',event=>{event.preventDefault();update();});
+ update();
+}
+
+
+bindForm('cost-form','cost-result',({priceA,pcA,priceB,pcB})=>{
+ const a=priceA*100/pcA;
+ const b=priceB*100/pcB;
+ const difference=Math.round((a-b)*100)/100;
+ const conclusion=difference===0?'Mismo costo aproximado por kg de PC.':(difference<0?'A':'B')+' tiene el menor costo por kg de PC.';
+ return 'A: $'+fmt(a)+' · B: $'+fmt(b)+' por kg de PC. '+conclusion;
+});
+const creepResults={
+ barley:'Ración 1: 30 %. Ración 2: 41 %. La segunda incluye 11 puntos porcentuales más de cebada, una fuente de energía.',
+ soy:'Ración 1: 10 %. Ración 2: 12 %. La segunda incluye 2 puntos porcentuales más de pasta de soya, una fuente de proteína.',
+ molasses:'Ambas incluyen 6 % de melaza, usada para palatabilidad en este ejemplo.'
+};
+const growthRows=[[300,1.3,3.6,191],[400,1.5,4.1,234],[425,1.7,4.7,240],[350,1.7,4.7,240]];
+function showCreep(){
+ byId('creep-result').textContent=creepResults[byId('creep').value];
+}
+function showGrowth(){
+ const i=Number(byId('growth').value);
+ const [gdp,cms,em,protein]=growthRows[i];
+ const [previousGdp,previousCms,previousEm,previousProtein]=growthRows[i-1];
+ byId('growth-result').textContent='Etapa anterior → seleccionada: GDP '+previousGdp+' → '+gdp+' g/d · CMS '+fmt(previousCms,1)+' → '+fmt(cms,1)+' kg/d · EM '+fmt(previousEm,1)+' → '+fmt(em,1)+' Mcal/d · Proteína '+previousProtein+' → '+protein+' g/d.';
+}
+byId('creep').addEventListener('change',showCreep);
+byId('growth').addEventListener('change',showGrowth);
+showCreep();
+showGrowth();
+const audioNotes={"sistemas": "El sistema de producción determina cuánto depende el rebaño del pastoreo. Antes de complementar, estima la disponibilidad y la calidad del forraje que comen los ovinos.", "oveja": "El aporte se ajusta a la etapa y a las reservas de la oveja. En gestación final sube la demanda y conviene evaluar la densidad de la dieta. Durante la lactancia aumenta la necesidad de nutrientes para producir leche.", "cordero": "El suplemento para corderos se ofrece durante la lactancia y facilita la adaptación al alimento sólido. Las dos fórmulas de clase permiten comparar ingredientes, su función y el porcentaje de inclusión.", "engorda": "Compara peso vivo, consumo, energía y ganancia diaria. En la tabla, desarrollo y finalización tienen el mismo consumo de referencia, pero la ganancia diaria baja al pasar a finalización.", "complemento": "Elige el complemento según el déficit. Compara precios en la misma base y divide el precio por la fracción de proteína para obtener el costo por kilogramo de proteína cruda."};
+for(const [id,script] of Object.entries(audioNotes)){
+ const details=document.createElement('details');
+ details.innerHTML='<summary>Escuchar y leer el resumen</summary><p>'+script+'</p><div class="audio"><button type="button">Reproducir o repetir</button><button type="button">Detener</button><span class="status" role="status"></span></div>';
+ byId(id).querySelector('h2').after(details);
+ const [play,stop]=details.querySelectorAll('button');
+ const status=details.querySelector('.status');
+ if(!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)){
+  play.disabled=stop.disabled=true;
+  status.textContent='Este navegador no ofrece narración. Puedes leer el resumen.';
+ }else{
+  play.addEventListener('click',()=>{
+   speechSynthesis.cancel();
+   const speech=new SpeechSynthesisUtterance(script);
+   speech.lang='es-MX';
+   speech.rate=.94;
+   const voices=speechSynthesis.getVoices();
+   speech.voice=voices.find(voice=>voice.lang==='es-MX')||voices.find(voice=>voice.lang.startsWith('es'))||null;
+   speech.onstart=()=>status.textContent='Reproduciendo.';
+   speech.onend=()=>status.textContent='Resumen terminado.';
+   speech.onerror=event=>{
+    if(!['canceled','interrupted'].includes(event.error))status.textContent='La narración no está disponible. Puedes leer el resumen.';
+   };
+   speechSynthesis.speak(speech);
+  });
+  stop.addEventListener('click',()=>{speechSynthesis.cancel();status.textContent='Audio detenido.';});
+ }
+}
+
+const prompts=[["Baja la disponibilidad de forraje en el potrero. ¿Qué revisas primero?", ["Oferta y calidad del forraje que el lote puede consumir", "Solo el precio de la sal", "El nombre de la raza"], 0, "Conocer lo que el lote puede cosechar ayuda a decidir si requiere una reserva o un complemento.", "sistemas"], ["La demanda de proteína aumenta al final de la gestación y el consumo cambia poco. ¿Qué conviene valorar?", ["Solo los kg de peso vivo", "Consumo y concentración de proteína por kg de MS", "Solo el día de la monta"], 1, "La cantidad diaria depende del consumo de materia seca y de su densidad de nutrientes.", "oveja"], ["¿Por qué se consideran aparte las primalas gestantes?", ["Porque ya no crecen", "Porque solo requieren minerales", "Porque además de sostener la gestación siguen creciendo"], 2, "Deben cubrir sus propias necesidades de crecimiento además de las de la gestación.", "oveja"], ["¿Cuándo ubica la presentación el creep feeding?", ["Durante la lactancia, antes del destete", "Después de la finalización", "En un día exacto de vida"], 0, "La presentación explica su función antes del destete sin dar un día exacto de inicio.", "cordero"], ["¿Qué ingrediente tiene la misma inclusión y se lista para palatabilidad?", ["Pasta de soya", "Melaza", "Cebada"], 1, "La melaza aparece con 6 % en ambos ejemplos.", "cordero"], ["De desarrollo a finalización, ¿qué ocurre según la tabla?", ["Aumenta el CMS y la GDP", "Baja la EM diaria", "El CMS se mantiene y la GDP baja"], 2, "Ambas etapas tienen 1.7 kg MS/d de referencia. La GDP baja de 425 a 350 g/d.", "engorda"], ["Si un suplemento cuesta $8/kg MS y tiene 20 % de PC, ¿cuánto cuesta el kg de PC?", ["$40", "$1.60", "$16"], 0, "Divide $8 entre 0.20.", "complemento"], ["Si falta volumen de forraje durante el estiaje, ¿qué opción aborda de entrada ese problema?", ["Solo sales minerales", "Revisar la reserva de heno o ensilado", "Elegir solo por precio del suplemento"], 1, "El heno o ensilado puede aportar el volumen faltante. Evalúa después la composición total.", "complemento"]];
+const quiz=byId('quiz');
+let queue=[],selected=new Map(),checked=new Set(),position=0;
+function startQuiz(ids){
+ queue=[...ids];
+ selected.clear();
+ checked.clear();
+ position=0;
+ showQuestion();
+}
+function showQuestion(){
+ const index=queue[position];
+ const [question,answers,correct,reason,section]=prompts[index];
+ quiz.innerHTML='<p class="source" id="question-position" tabindex="-1">Pregunta '+(position+1)+' de '+queue.length+
+  ' · '+selected.size+' respondidas</p><form><fieldset><legend>'+question+'</legend>'+
+  answers.map((answer,i)=>'<label class="choice"><input type="radio" name="answer" value="'+i+'"'+
+   (selected.get(index)===i?' checked':'')+' required> '+answer+'</label>').join('')+
+  '</fieldset><button>Comprobar</button></form><p id="feedback" role="status" class="result"></p>'+
+  '<div class="actions"><button id="previous-question"'+(position===0?' disabled':'')+'>Anterior</button>'+
+  '<button id="next-question"'+(position===queue.length-1?' disabled':'')+'>Siguiente</button>'+
+  '<label>Ir a la pregunta <select id="jump-question">'+queue.map((_,i)=>'<option value="'+i+'"'+
+   (position===i?' selected':'')+'>'+(i+1)+'</option>').join('')+'</select></label>'+
+  '<button id="finish-quiz">Ver resultado</button></div>';
+ const form=quiz.querySelector('form');
+ const feedback=byId('feedback');
+ function showFeedback(){
+  feedback.innerHTML=(selected.get(index)===correct?'Correcto. ':'Respuesta esperada: '+answers[correct]+'. ')+
+   reason+' <a href="#'+section+'">Volver al tema</a>.';
+ }
+ if(checked.has(index))showFeedback();
+ form.addEventListener('change',event=>{
+  selected.set(index,Number(event.target.value));
+  checked.delete(index);
+  feedback.textContent='';
+  byId('question-position').textContent='Pregunta '+(position+1)+' de '+queue.length+' · '+selected.size+' respondidas';
+ });
+ form.addEventListener('submit',event=>{
+  event.preventDefault();
+  checked.add(index);
+  showFeedback();
+ });
+ byId('previous-question').onclick=()=>goToQuestion(position-1);
+ byId('next-question').onclick=()=>goToQuestion(position+1);
+ byId('jump-question').onchange=event=>goToQuestion(Number(event.target.value));
+ byId('finish-quiz').onclick=showQuizResult;
+}
+function goToQuestion(next){
+ position=next;
+ showQuestion();
+ byId('question-position').focus();
+}
+function showQuizResult(){
+ const pending=queue.findIndex(index=>!selected.has(index));
+ if(pending!==-1){
+  goToQuestion(pending);
+  byId('feedback').textContent='Responde las '+(queue.length-selected.size)+' preguntas pendientes para ver tu calificación.';
+  return;
+ }
+ const missed=queue.filter(index=>selected.get(index)!==prompts[index][2]);
+ const correct=queue.length-missed.length;
+ quiz.innerHTML='<h3 tabindex="-1">Resultado</h3><p>'+correct+' de '+queue.length+
+  ' respuestas correctas · '+fmt(correct*10/queue.length)+' / 10.</p><div class="actions">'+
+  (missed.length?'<button id="retry">Repetir falladas</button>':'')+
+  '<button id="review-quiz">Revisar respuestas</button><button id="restart">Reiniciar repaso</button></div>';
+ if(missed.length)byId('retry').onclick=()=>{startQuiz(missed);byId('question-position').focus();};
+ byId('review-quiz').onclick=()=>{queue.forEach(index=>checked.add(index));goToQuestion(0);};
+ byId('restart').onclick=()=>{startQuiz(prompts.keys());byId('question-position').focus();};
+ quiz.querySelector('h3').focus();
+}
+startQuiz(prompts.keys());
+const matchingModules=[["sistemas", "Sistemas y pastoreo", [["Extensivo", "La alimentación se apoya principalmente en el pastoreo."], ["Semiintensivo", "Combina pastoreo con alimentación suministrada."], ["Intensivo", "Permite mayor control de la alimentación mediante estabulación o pastos manejados."], ["Selección del forraje", "Preferencia por ciertas partes de las plantas al pastorear."], ["Estiaje", "Periodo en que puede reducirse la disponibilidad de forraje."]]], ["oveja", "Ciclo reproductivo", [["Condición corporal", "Estimación de las reservas del animal."], ["Mantenimiento", "Necesidades para sostener las funciones básicas."], ["Flushing", "Aumento temporal del aporte energético alrededor del empadre."], ["Empadre", "Periodo destinado a la monta."], ["Gestación final", "Etapa de mayor demanda gestacional en el ejemplo."], ["Primalas", "Hembras jóvenes cuyo crecimiento debe considerarse al planear el empadre y la gestación."], ["Lactancia", "Etapa en que la producción de leche eleva las necesidades."]]], ["cordero", "Cordero, destete e ingredientes", [["Creep feeding", "Oferta de suplemento sólido en un espacio de acceso para corderos."], ["Destete", "Retiro de la alimentación láctea."], ["Cebada y avena", "Cereales que aparecen como fuentes de energía en ambas fórmulas."], ["Pasta de soya", "Ingrediente proteico con 10 y 12 por ciento de inclusión en los dos ejemplos."], ["Melaza", "Ingrediente incluido para palatabilidad en los dos ejemplos."], ["Premezcla", "Ingrediente que aporta vitaminas y minerales en la fórmula."]]], ["engorda", "Crecimiento y desempeño", [["CMS", "Cantidad consumida sin contar el agua."], ["EM diaria", "Energía metabolizable expresada por día."], ["Densidad de EM", "Energía metabolizable por kilogramo de materia seca."], ["GDP", "Cambio de peso dividido entre los días del periodo."], ["Finalización", "Fase final de la engorda previa a la salida."]]], ["complemento", "Complementación y costo", [["Complementación proteica", "Aporte dirigido a corregir una deficiencia de proteína."], ["Complementación energética", "Aporte dirigido a corregir una deficiencia de energía."], ["Sales minerales", "Opción para cubrir un déficit identificado de minerales."], ["Forraje conservado", "Heno o ensilado que puede formar parte de la reserva de estiaje."], ["Costo por kg de proteína", "Precio por kg de materia seca dividido entre la fracción de proteína cruda."]]]];
+const scores=new Map();
+const totalPairs=matchingModules.reduce((sum,[,,pairs])=>sum+pairs.length,0);
+const matchReport=document.createElement('div');
+matchReport.className='lab';
+matchReport.setAttribute('role','status');
+byId('repaso').querySelector('h2').after(matchReport);
+
+function gradeLabel(correct,total){
+ return fmt(correct*10/total)+' / 10 ('+correct+' de '+total+' aciertos)';
+}
+
+function updateMatchReport(){
+ const graded=[...scores.values()];
+ const attempted=graded.reduce((sum,score)=>sum+score.total,0);
+ const correct=graded.reduce((sum,score)=>sum+score.correct,0);
+ matchReport.textContent=attempted===totalPairs
+  ? 'Calificación global de relación de conceptos: '+gradeLabel(correct,totalPairs)+'.'
+  : 'Relación de conceptos: '+graded.length+' de '+matchingModules.length+' actividades calificadas.'+
+    (attempted?' Calificación parcial: '+gradeLabel(correct,attempted)+'.':'');
+}
+updateMatchReport();
+
+function shuffledIndexes(length){
+ const items=Array.from({length},(_,index)=>index);
+ for(let i=items.length-1;i>0;i--){
+  const j=Math.floor(Math.random()*(i+1));
+  [items[i],items[j]]=[items[j],items[i]];
+ }
+ return items;
+}
+
+function scoreMatches(answers){
+ return answers.reduce((correct,answer,index)=>correct+Number(answer!==''&&Number(answer)===index),0);
+}
+
+matchingModules.forEach(([id,title,pairs],activityIndex)=>{
+ const activity=document.createElement('article');
+ activity.className='lab matching';
+ const order=shuffledIndexes(pairs.length);
+ const options=order.map(index=>'<option value="'+index+'">'+pairs[index][1]+'</option>').join('');
+ activity.innerHTML='<h3>Relaciona conceptos: '+title+'</h3>'+
+  '<details><summary>Repasar los significados</summary><dl>'+
+  pairs.map(([term,definition])=>'<dt><strong>'+term+'</strong></dt><dd>'+definition+'</dd>').join('')+
+  '</dl></details><p>Elige el significado de cada concepto y pulsa <strong>Calificar</strong>. Cada acierto vale lo mismo.</p>'+
+  '<div class="match-exercise">'+pairs.map(([term],index)=>'<div class="match-row"><label>'+term+
+   '<select aria-describedby="match-'+activityIndex+'-'+index+'"><option value="">Elige un significado</option>'+options+
+   '</select></label><p class="match-note" id="match-'+activityIndex+'-'+index+'"></p></div>').join('')+
+  '<div class="actions"><button type="button" data-grade>Calificar</button><button type="button" data-retry>Reintentar actividad</button></div>'+
+  '<p role="status" class="result"></p></div>';
+ byId(id).append(activity);
+ const exercise=activity.querySelector('.match-exercise');
+ const gradeButton=exercise.querySelector('[data-grade]');
+ const retryButton=exercise.querySelector('[data-retry]');
+ const choices=[...exercise.querySelectorAll('select')];
+ const notes=[...exercise.querySelectorAll('.match-note')];
+ const result=exercise.querySelector('.result');
+
+ gradeButton.addEventListener('click',()=>{
+  const answers=choices.map(choice=>choice.value);
+  if(answers.includes('')){
+   result.textContent='Selecciona un significado para cada concepto antes de calificar.';
+   choices[answers.indexOf('')].focus();
+   return;
+  }
+  const correct=scoreMatches(answers);
+  notes.forEach((note,index)=>{
+   const matches=Number(answers[index])===index;
+   note.dataset.result=matches?'correct':'incorrect';
+   note.textContent=(matches?'Correcto. ':'Incorrecto. Significado correcto: ')+pairs[index][1];
+  });
+  result.textContent='Calificación: '+gradeLabel(correct,pairs.length)+'.';
+  scores.set(activityIndex,{correct,total:pairs.length});
+  updateMatchReport();
+  choices.forEach(choice=>choice.disabled=true);
+  gradeButton.disabled=true;
+  retryButton.focus();
+ });
+
+ retryButton.addEventListener('click',()=>{
+  choices.forEach(choice=>{choice.value='';choice.disabled=false;});
+  notes.forEach(note=>{note.textContent='';delete note.dataset.result;});
+  result.textContent='Nuevo intento. La calificación global se actualizará cuando vuelvas a calificar.';
+  gradeButton.disabled=false;
+  choices[0].focus();
+ });
+});
+</script></body></html>
